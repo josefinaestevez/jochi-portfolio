@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="JOCHI — Argentinian DJ and emerging producer based in Barcelona. Minimal deep tech and underground tech house.">
+  <meta property="og:title" content="JOCHI — DJ & Producer">
+  <meta property="og:description" content="Minimal · Deep Tech · Underground Tech House — Barcelona">
+  <meta property="og:image" content="assets/images/9.jpg">
+  <title>JOCHI — DJ & Producer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav id="nav">
+    <a href="#hero" class="nav-logo">
+      <img src="assets/images/logo.png" alt="JOCHI" class="nav-logo-img" />
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#music">Music</a></li>
+      <li><a href="#events">Events</a></li>
+      <li><a href="#gallery">Photos</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <section id="hero">
+    <div class="hero-bg">
+      <img src="assets/images/1.jpg" alt="JOCHI" />
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-label">DJ &amp; Producer &nbsp;/&nbsp; Barcelona</p>
+      <h1 class="hero-title">
+        <img src="assets/images/logo.png" alt="JOCHI" class="hero-logo-img" />
+      </h1>
+      <img src="assets/images/lunas.png" alt="" class="hero-moon-img" aria-hidden="true" />
+      <p class="hero-sub">Minimal Deep Tech &nbsp;&middot;&nbsp; Underground Tech House</p>
+    </div>
+    <a href="#about" class="scroll-hint" aria-label="Scroll down">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="12" y1="5" x2="12" y2="19"/>
+        <polyline points="19 12 12 19 5 12"/>
+      </svg>
+    </a>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image">
+          <img src="assets/images/8.jpg" alt="JOCHI" />
+        </div>
+        <div class="about-text">
+          <span class="section-label">About</span>
+          <h2>A sound between<br>worlds</h2>
+          <p class="body-text">JOCHI is the musical project of Josefina, an Argentinian DJ and emerging producer based in Barcelona. Her sound moves between minimal / deep tech and underground tech house, driven by hypnotic grooves and subtle progression. With an engineering background, she blends structure with sensitivity — crafting music as a language where rhythm and emotion converge to create genuine connection.</p>
+          <p class="body-text">She has brought her sets through the rooms of Macarena, Rouge Cocktail Club, City Hall, and Bridge 48 — where she is part of the Artist Growth program. Inspired by the digital culture and visual language of the late '90s and early 2000s, JOCHI weaves nostalgia, energy, and the pulse of new technologies into her artistic vision. Her work explores the dialogue between logic and intuition, intimacy and expansion — building a personal universe where her Argentinian roots and Barcelona present meet on the dancefloor.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mixes -->
+  <section id="music">
+    <div class="container">
+      <span class="section-label">Mixes &amp; Sets</span>
+      <h2 class="section-title">Listen</h2>
+      <div class="mixes-list" id="mixes-list"></div>
+      <a href="https://soundcloud.com/jochimusica" target="_blank" rel="noopener" class="events-ra-link">
+        All mixes on SoundCloud &rarr;
+      </a>
+    </div>
+  </section>
+
+  <!-- Events -->
+  <section id="events">
+    <div class="container">
+      <span class="section-label">Live</span>
+      <h2 class="section-title">Events</h2>
+      <div id="events-list">
+        <p class="events-loading">Loading events…</p>
+      </div>
+      <a href="https://ra.co/dj/jochi" target="_blank" rel="noopener" class="events-ra-link">
+        Full profile on Resident Advisor &rarr;
+      </a>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery">
+    <div class="container">
+      <span class="section-label">Photos</span>
+      <h2 class="section-title">Gallery</h2>
+      <p class="gallery-credit">Photos by <a href="https://www.instagram.com/i_ulius/" target="_blank" rel="noopener">@i_ulius</a></p>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item" data-index="0">
+        <img src="assets/images/1.jpg" alt="JOCHI" loading="lazy" />
+      </div>
+      <div class="gallery-item" data-index="1">
+        <img src="assets/images/8.jpg" alt="JOCHI" loading="lazy" />
+      </div>
+      <div class="gallery-item" data-index="2">
+        <img src="assets/images/DSC_0624.jpg" alt="JOCHI" loading="lazy" />
+      </div>
+      <div class="gallery-item" data-index="3">
+        <img src="assets/images/11.jpg" alt="JOCHI" loading="lazy" />
+      </div>
+      <div class="gallery-item" data-index="4">
+        <img src="assets/images/DSC_0637.jpg" alt="JOCHI" loading="lazy" />
+      </div>
+      <div class="gallery-item" data-index="5">
+        <img src="assets/images/DSC_0709.jpg" alt="JOCHI" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer">
+    <button class="lightbox-close" aria-label="Close">&times;</button>
+    <button class="lightbox-prev" aria-label="Previous photo">&#8592;</button>
+    <button class="lightbox-next" aria-label="Next photo">&#8594;</button>
+    <img src="" alt="JOCHI" id="lightbox-img" />
+  </div>
+
+  <!-- Instagram (uncomment once INSTAGRAM_TOKEN is set in assets/js/main.js)
+  <section id="instagram">
+    <div class="container">
+      <span class="section-label">Instagram</span>
+      <h2 class="section-title">@jochimusica</h2>
+    </div>
+    <div class="instagram-grid" id="instagram-grid"></div>
+    <div class="container">
+      <a href="https://www.instagram.com/jochimusica/" target="_blank" rel="noopener" class="events-ra-link">
+        Follow on Instagram &rarr;
+      </a>
+    </div>
+  </section>
+  -->
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="container">
+      <span class="section-label">Get in touch</span>
+      <h2 class="section-title">Booking &amp;<br>Contact</h2>
+      <p class="contact-sub">For bookings, collaborations, and press inquiries.</p>
+      <div class="contact-btns">
+        <a href="mailto:josefina@machineandfolk.com" class="btn">Send a message</a>
+        <a href="https://drive.google.com/file/d/1aC_qxs3o4buJIhqebaUw9pIwZMUH5EBy/view" target="_blank" rel="noopener" class="btn btn-outline">Download Press Kit</a>
+      </div>
+      <p class="presskit-offer">Need a web press kit like this one? <a href="mailto:jochimusica@fmail.com">Get in touch &rarr;</a></p>
+      <nav class="social-links" aria-label="Social links">
+        <a href="https://www.instagram.com/jochimusica/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://soundcloud.com/jochimusica" target="_blank" rel="noopener">SoundCloud</a>
+        <a href="https://ra.co/dj/jochi" target="_blank" rel="noopener">Resident Advisor</a>
+        <a href="https://drive.google.com/file/d/1aC_qxs3o4buJIhqebaUw9pIwZMUH5EBy/view" target="_blank" rel="noopener">Press Kit</a>
+      </nav>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-inner">
+      <img src="assets/images/logo.png" alt="JOCHI" class="footer-logo-img" />
+      <img src="assets/images/lunas.png" alt="" class="footer-moon-img" aria-hidden="true" />
+      <span class="footer-copy">&copy; 2025</span>
+    </div>
+  </footer>
+
+  <!-- Floating mix player -->
+  <div id="mix-player" class="mix-player" aria-label="Now playing">
+    <div class="mix-player-header">
+      <img id="mix-player-thumb" src="" alt="" class="mix-player-thumb" />
+      <div class="mix-player-info">
+        <span id="mix-player-title" class="mix-player-title"></span>
+        <span id="mix-player-meta" class="mix-player-meta"></span>
+      </div>
+      <button id="mix-player-close" class="mix-player-close" aria-label="Close player">×</button>
+    </div>
+    <div class="mix-player-embed">
+      <iframe id="mix-player-iframe" frameborder="no" scrolling="no" allow="autoplay" width="100%" height="166" src=""></iframe>
+    </div>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
