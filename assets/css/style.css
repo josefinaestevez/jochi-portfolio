@@ -212,7 +212,7 @@ a {
 .section-title {
   font-family: var(--font-display);
   font-size: clamp(3rem, 5.5vw, 5rem);
-  font-weight: 600;
+  font-weight: 400;
   letter-spacing: 0.02em;
   line-height: 1;
 }
