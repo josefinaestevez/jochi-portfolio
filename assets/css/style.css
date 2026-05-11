@@ -157,15 +157,15 @@ a {
 
 .nav-links a {
   font-family: var(--font-mono);
-  font-size: 0.62rem;
+  font-size: 0.68rem;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: rgba(244, 242, 236, 0.75);
+  color: rgba(244, 242, 236, 0.9);
   transition: color 0.2s;
 }
 
 #nav.scrolled .nav-links a {
-  color: var(--text-muted);
+  color: rgba(244, 242, 236, 0.65);
 }
 
 .nav-links a:hover {
