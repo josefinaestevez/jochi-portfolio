@@ -1137,6 +1137,7 @@ footer {
   .nav-links.open { display: flex; }
   .nav-links a { font-size: 0.85rem; color: var(--text); }
   #nav.scrolled .nav-links a { color: var(--text); }
+  #nav.menu-open { background: var(--bg) !important; backdrop-filter: none; -webkit-backdrop-filter: none; }
   .nav-toggle { display: flex; }
 
   .container { padding: 0 24px; }

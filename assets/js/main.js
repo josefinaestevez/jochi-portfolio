@@ -11,12 +11,14 @@ const navLinks = document.getElementById('nav-links');
 toggle?.addEventListener('click', () => {
   const open = navLinks.classList.toggle('open');
   toggle.setAttribute('aria-expanded', open);
+  nav.classList.toggle('menu-open', open);
   document.body.style.overflow = open ? 'hidden' : '';
 });
 
 navLinks?.querySelectorAll('a').forEach(link => {
   link.addEventListener('click', () => {
     navLinks.classList.remove('open');
+    nav.classList.remove('menu-open');
     toggle?.setAttribute('aria-expanded', 'false');
     document.body.style.overflow = '';
   });
