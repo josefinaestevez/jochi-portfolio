@@ -72,37 +72,8 @@ document.addEventListener('keydown', e => {
 });
 
 // ===== RA EVENTS =====
-const RA_GQL = 'https://corsproxy.io/?url=' + encodeURIComponent('https://ra.co/graphql');
-const RA_SLUG = 'jochi';
-
-function eventsQuery(type) {
-  return JSON.stringify({
-    query: `{
-      artist(slug: "${RA_SLUG}") {
-        events(type: ${type}, limit: 20) {
-          id
-          title
-          date
-          contentUrl
-          venue {
-            name
-            area { name country { name } }
-          }
-        }
-      }
-    }`
-  });
-}
-
 async function fetchEvents(type) {
-  const res = await fetch(RA_GQL, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      'Referer': 'https://ra.co/',
-    },
-    body: eventsQuery(type),
-  });
+  const res = await fetch(`/.netlify/functions/ra-events?type=${type}`);
   if (!res.ok) throw new Error(`HTTP ${res.status}`);
   const json = await res.json();
   return json?.data?.artist?.events ?? [];
