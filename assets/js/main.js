@@ -157,6 +157,14 @@ initEvents();
 // ===== MIXES =====
 const MIXES = [
   {
+    num: '04',
+    title: 'Trencadisc @ Born2B',
+    meta: 'Born2B · Jun \'26',
+    url: 'https://soundcloud.com/jochimusica/trencadisc-born2b',
+    trackId: '2381227773',
+    cover: 'assets/images/trencadisc-born2b.jpg',
+  },
+  {
     num: '03',
     title: 'Moonrise Sessions Vol. 3',
     meta: 'Macarena · Jan \'25 · 1h30',
